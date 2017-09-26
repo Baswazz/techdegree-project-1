@@ -11,6 +11,10 @@ body {
   color: #222;
   background: #f7f5f0;
 }
+
+img {
+  max-width: 100%;
+}
 /* Link Styles */
 
 a {
@@ -169,14 +173,17 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
+  body {
+    line-height: 1.6em;
+    }
 
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex;
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 
   header {
@@ -191,10 +198,6 @@ a.social:hover {
 
   main {
     padding-top: 20px;
-  }
-
-  main p {
-    line-height: 1.6em;
   }
 
   footer {
