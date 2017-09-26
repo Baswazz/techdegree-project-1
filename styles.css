@@ -15,11 +15,13 @@ body {
 img {
   max-width: 100%;
 }
+
 /* Link Styles */
 
 a {
   text-decoration: none;
   color: #999;
+  transition: color .3s;
 }
 a:hover {
   color: #03CEA4;
@@ -75,10 +77,10 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 4px solid #000;
-  transition: all .3s;
+  transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(-5deg);
+  transform: scale(1.2) rotate(10deg);
 }
 .tag {
   background-color: #03CEA4;
@@ -104,6 +106,14 @@ header .profile-image:hover {
 }
 .card:hover {
   border-color: #03CEA4;
+}
+
+.card img {
+  transition: all .5s;
+}
+
+.card img:hover {
+  opacity: 0.5;
 }
 
 ul.skills {
